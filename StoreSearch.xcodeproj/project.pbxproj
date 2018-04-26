@@ -16,6 +16,7 @@
 		DD1A436D208FA44A001A282D /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A436C208FA44A001A282D /* SearchResultCell.swift */; };
 		DD1A4370208FAC8E001A282D /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1A436F208FAC8E001A282D /* NothingFoundCell.xib */; };
 		DD9878AF209241C000BBE7C2 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD9878AE209241C000BBE7C2 /* LoadingCell.xib */; };
+		DD9878B12092727C00BBE7C2 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9878B02092727C00BBE7C2 /* UIImageView+DownloadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DD1A436C208FA44A001A282D /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		DD1A436F208FAC8E001A282D /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		DD9878AE209241C000BBE7C2 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		DD9878B02092727C00BBE7C2 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		DD1A4365208F94C3001A282D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD9878B02092727C00BBE7C2 /* UIImageView+DownloadImage.swift */,
 				DD1A4353208F8B42001A282D /* AppDelegate.swift */,
 				DD1A435A208F8B42001A282D /* Assets.xcassets */,
 			);
@@ -169,6 +172,7 @@
 				DD1A4367208F95CB001A282D /* SearchResult.swift in Sources */,
 				DD1A436D208FA44A001A282D /* SearchResultCell.swift in Sources */,
 				DD1A4354208F8B42001A282D /* AppDelegate.swift in Sources */,
+				DD9878B12092727C00BBE7C2 /* UIImageView+DownloadImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
