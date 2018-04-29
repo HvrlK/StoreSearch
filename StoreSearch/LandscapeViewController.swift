@@ -46,9 +46,18 @@ class LandscapeViewController: UIViewController {
         )
         if firstTime {
             firstTime = false
-            tileButtons(search.searchResults)
-        }
+            switch search.state {
+            case .notSearchedYet:
+                break
+            case .loading:
+                break
+            case .noResults:
+                break
+            case .results(let list):
+                tileButtons(list)
+            }        }
     }
+    
     // FIXME: supporting iphone X and use collection view 
     private func tileButtons(_ searchResults: [SearchResult]) {
         var columnsPerPage = 5
