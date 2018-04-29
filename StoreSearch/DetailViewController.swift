@@ -55,7 +55,7 @@ class DetailViewController: UIViewController {
     func updateUI() {
         nameLabel.text = searchResult.name
         if searchResult.artistName.isEmpty {
-            artistNameLabel.text = "Unknown"
+            artistNameLabel.text = NSLocalizedString("Unknown", comment: "Unknow atrist name") 
         } else {
             artistNameLabel.text = searchResult.artistName
         }

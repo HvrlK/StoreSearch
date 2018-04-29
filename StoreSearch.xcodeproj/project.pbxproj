@@ -25,6 +25,9 @@
 		DD9878C42096174300BBE7C2 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9878C32096174300BBE7C2 /* Search.swift */; };
 		DDDBAABE2096510E00EB50F0 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAAC02096510E00EB50F0 /* NothingFoundCell.xib */; };
 		DDDBAAC22096543100EB50F0 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAAC42096543100EB50F0 /* LoadingCell.xib */; };
+		DDDBAACB20965B4400EB50F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAAC920965B4400EB50F0 /* Localizable.strings */; };
+		DDDBAACF2096626300EB50F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAACD2096626300EB50F0 /* Localizable.strings */; };
+		DDDBAAD3209664B700EB50F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAAD5209664B700EB50F0 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,12 @@
 		DDDBAAC32096543100EB50F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
 		DDDBAAC62096546100EB50F0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LoadingCell.strings; sourceTree = "<group>"; };
 		DDDBAAC8209655EA00EB50F0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		DDDBAACA20965B4400EB50F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDDBAACC20965BC200EB50F0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDDBAACE2096626300EB50F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDDBAAD02096628300EB50F0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDDBAAD4209664B700EB50F0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDDBAAD6209664CA00EB50F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +98,12 @@
 				DD1A4355208F8B42001A282D /* SearchViewController.swift */,
 				DD9878B420932EC600BBE7C2 /* DetailViewController.swift */,
 				DD1A4366208F95CB001A282D /* SearchResult.swift */,
+				DDDBAAC920965B4400EB50F0 /* Localizable.strings */,
 				DD9878BE2093AF2200BBE7C2 /* Animation */,
 				DD1A436E208FA452001A282D /* SearchResultCell */,
 				DD1A4365208F94C3001A282D /* Supporting Files */,
 				DD1A435F208F8B42001A282D /* Info.plist */,
+				DDDBAAD5209664B700EB50F0 /* InfoPlist.strings */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				DD1A436C208FA44A001A282D /* SearchResultCell.swift */,
+				DDDBAACD2096626300EB50F0 /* Localizable.strings */,
 				DD1A4368208F9F40001A282D /* SearchResultCell.xib */,
 				DDDBAAC42096543100EB50F0 /* LoadingCell.xib */,
 				DDDBAAC02096510E00EB50F0 /* NothingFoundCell.xib */,
@@ -190,7 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD1A435B208F8B42001A282D /* Assets.xcassets in Resources */,
+				DDDBAAD3209664B700EB50F0 /* InfoPlist.strings in Resources */,
+				DDDBAACB20965B4400EB50F0 /* Localizable.strings in Resources */,
 				DDDBAAC22096543100EB50F0 /* LoadingCell.xib in Resources */,
+				DDDBAACF2096626300EB50F0 /* Localizable.strings in Resources */,
 				DD1A4369208F9F40001A282D /* SearchResultCell.xib in Resources */,
 				DDDBAABE2096510E00EB50F0 /* NothingFoundCell.xib in Resources */,
 				DD1A4359208F8B42001A282D /* Main.storyboard in Resources */,
@@ -248,6 +263,33 @@
 				DDDBAAC62096546100EB50F0 /* nl */,
 			);
 			name = LoadingCell.xib;
+			sourceTree = "<group>";
+		};
+		DDDBAAC920965B4400EB50F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDDBAACA20965B4400EB50F0 /* en */,
+				DDDBAACC20965BC200EB50F0 /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DDDBAACD2096626300EB50F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDDBAACE2096626300EB50F0 /* en */,
+				DDDBAAD02096628300EB50F0 /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DDDBAAD5209664B700EB50F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDDBAAD4209664B700EB50F0 /* nl */,
+				DDDBAAD6209664CA00EB50F0 /* Base */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
