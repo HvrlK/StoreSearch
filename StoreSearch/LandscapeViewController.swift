@@ -12,7 +12,7 @@ class LandscapeViewController: UIViewController {
     
     // MARK: - Properties
     
-    var searchResults = [SearchResult]()
+    var search: Search!
     private var firstTime = true
     private var downloadTasks = [URLSessionDownloadTask]()
     
@@ -46,7 +46,7 @@ class LandscapeViewController: UIViewController {
         )
         if firstTime {
             firstTime = false
-            tileButtons(searchResults)
+            tileButtons(search.searchResults)
         }
     }
     // FIXME: supporting iphone X and use collection view 
