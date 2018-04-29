@@ -6,7 +6,7 @@
 //  Copyright © 2018 Vitalii Havryliuk. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 typealias SearchComplete = (Bool) -> Void
 
@@ -45,7 +45,7 @@ class Search {
     func performSearch(for text: String, category: Category, completion: @escaping SearchComplete) {
         if !text.isEmpty {
             dataTask?.cancel()
-            
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
             state = .loading
             
             let url = iTunesURL(searchText: text, category: category)
@@ -53,7 +53,6 @@ class Search {
             let session = URLSession.shared
             dataTask = session.dataTask(with: url, completionHandler: {
                 data, response, error in
-                self.state = .notSearchedYet
                 var success = false
                 if let error = error as NSError?, error.code == -999 {
                     return
@@ -69,6 +68,7 @@ class Search {
                     success = true
                 }
                 DispatchQueue.main.async {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
                     completion(success)
                 }
             })

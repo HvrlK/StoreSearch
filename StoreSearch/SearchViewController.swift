@@ -81,6 +81,9 @@ class SearchViewController: UIViewController {
             
             coordinator.animate(alongsideTransition: { _ in
                 controller.view.alpha = 0
+                if self.presentedViewController != nil {
+                    self.dismiss(animated: true, completion: nil)
+                }
             }, completion: { _ in
                 controller.view.removeFromSuperview()
                 controller.removeFromParentViewController()
@@ -89,8 +92,6 @@ class SearchViewController: UIViewController {
         }
     }
 
-    
-    
     func showNetworkError() {
         let alert = UIAlertController(title: "Whooops...", message: "There was an error reading from the iTunes Store. Please try again.", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -105,6 +106,7 @@ class SearchViewController: UIViewController {
                     self.showNetworkError()
                 }
                 self.tableView.reloadData()
+                self.landscapeViewController?.searchResultsReceived()
             })
             tableView.reloadData()
             searchBar.resignFirstResponder()
