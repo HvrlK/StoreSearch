@@ -10,9 +10,22 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // MARK: - Properties
 
     var window: UIWindow?
-
+    var splitViewController: UISplitViewController {
+        return window?.rootViewController as! UISplitViewController
+    }
+    var searchViewController: SearchViewController {
+        return splitViewController.viewControllers.first as! SearchViewController
+    }
+    var detailNavigationController: UINavigationController {
+        return splitViewController.viewControllers.last as! UINavigationController
+    }
+    var detailViewController: DetailViewController {
+        return detailNavigationController.topViewController as! DetailViewController
+    }
 
     // MARK: - Methods
     
@@ -24,6 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         customizeAppearance()
+        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+        searchViewController.splitViewDetail = detailViewController
         return true
     }
 
