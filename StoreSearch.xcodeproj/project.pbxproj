@@ -28,6 +28,7 @@
 		DDDBAACB20965B4400EB50F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAAC920965B4400EB50F0 /* Localizable.strings */; };
 		DDDBAACF2096626300EB50F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAACD2096626300EB50F0 /* Localizable.strings */; };
 		DDDBAAD3209664B700EB50F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAAD5209664B700EB50F0 /* InfoPlist.strings */; };
+		DDDBAAD8209741F000EB50F0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDBAAD7209741F000EB50F0 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		DDDBAAD02096628300EB50F0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDDBAAD4209664B700EB50F0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDDBAAD6209664CA00EB50F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDDBAAD7209741F000EB50F0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				DD9878BF2095E6EF00BBE7C2 /* LandscapeViewController.swift */,
 				DD1A4355208F8B42001A282D /* SearchViewController.swift */,
 				DD9878B420932EC600BBE7C2 /* DetailViewController.swift */,
+				DDDBAAD7209741F000EB50F0 /* MenuViewController.swift */,
 				DD1A4366208F95CB001A282D /* SearchResult.swift */,
 				DDDBAAC920965B4400EB50F0 /* Localizable.strings */,
 				DD9878BE2093AF2200BBE7C2 /* Animation */,
@@ -227,6 +230,7 @@
 				DD1A436D208FA44A001A282D /* SearchResultCell.swift in Sources */,
 				DD9878BB2093AA2000BBE7C2 /* BounceAnimationController.swift in Sources */,
 				DD9878C02095E6EF00BBE7C2 /* LandscapeViewController.swift in Sources */,
+				DDDBAAD8209741F000EB50F0 /* MenuViewController.swift in Sources */,
 				DD9878B520932EC600BBE7C2 /* DetailViewController.swift in Sources */,
 				DD1A4354208F8B42001A282D /* AppDelegate.swift in Sources */,
 				DD9878B92093A60B00BBE7C2 /* GradientView.swift in Sources */,
