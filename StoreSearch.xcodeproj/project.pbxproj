@@ -29,6 +29,7 @@
 		DDDBAACF2096626300EB50F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAACD2096626300EB50F0 /* Localizable.strings */; };
 		DDDBAAD3209664B700EB50F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDDBAAD5209664B700EB50F0 /* InfoPlist.strings */; };
 		DDDBAAD8209741F000EB50F0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDBAAD7209741F000EB50F0 /* MenuViewController.swift */; };
+		DDE5BF6D2098861200B09CF1 /* LandscapeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE5BF6C2098861200B09CF1 /* LandscapeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		DDDBAAD4209664B700EB50F0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDDBAAD6209664CA00EB50F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDDBAAD7209741F000EB50F0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DDE5BF6C2098861200B09CF1 /* LandscapeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		DD1A436E208FA452001A282D /* SearchResultCell */ = {
 			isa = PBXGroup;
 			children = (
+				DDE5BF6C2098861200B09CF1 /* LandscapeCell.swift */,
 				DD1A436C208FA44A001A282D /* SearchResultCell.swift */,
 				DDDBAACD2096626300EB50F0 /* Localizable.strings */,
 				DD1A4368208F9F40001A282D /* SearchResultCell.xib */,
@@ -230,6 +233,7 @@
 				DD1A436D208FA44A001A282D /* SearchResultCell.swift in Sources */,
 				DD9878BB2093AA2000BBE7C2 /* BounceAnimationController.swift in Sources */,
 				DD9878C02095E6EF00BBE7C2 /* LandscapeViewController.swift in Sources */,
+				DDE5BF6D2098861200B09CF1 /* LandscapeCell.swift in Sources */,
 				DDDBAAD8209741F000EB50F0 /* MenuViewController.swift in Sources */,
 				DD9878B520932EC600BBE7C2 /* DetailViewController.swift in Sources */,
 				DD1A4354208F8B42001A282D /* AppDelegate.swift in Sources */,
